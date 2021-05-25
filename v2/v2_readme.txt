@@ -1,0 +1,1 @@
+In Version 2 , add tools icons and add necessary styling to tools container

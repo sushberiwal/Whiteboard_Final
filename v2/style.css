@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.tools-container {
+  height: 70px;
+  /* background: lightblue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tools {
+  display: flex;
+  background: lightcyan;
+  width: 70%;
+  height: 80%;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.tool {
+  height: 70%;
+  width: 5%;
+}
+
+.tool img {
+  height: 100%;
+  width: 100%;
+}
+
+.canvas-container {
+  height: calc(100vh - 70px);
+}
+
+.active-tool {
+  background: lightsteelblue;
+  border-radius: 40%;
+  transform: scale(1.2);
+  padding: 3px;
+}
