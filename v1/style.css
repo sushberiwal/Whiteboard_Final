@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.tools-container{
+  height: 70px;
+  background: lightblue;
+}
+
+.canvas-container{
+  height: calc(100vh - 70px);
+}
+
