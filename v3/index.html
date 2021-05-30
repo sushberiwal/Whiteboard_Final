@@ -1,0 +1,60 @@
+<!-- 8. Add tool options div in pencil tool and eraser tool
+        and then add css of tool options also Make sure to make tool position relative
+        so that if tool options are position absolute they align acc to their respectivetool !  -->
+<!-- Also add hide class to tool options because they will not be visible initially -->
+<!-- 9. Jump to tools.js file  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhiteBoard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tools-container">
+        <div class="tools">
+            <div class="tool active-tool" id="pencil">
+                <img src="./NewIcons/Black_Pencil.svg" alt="">
+                <div class="tool-options hide" id="pencil-options">
+                    <input type="range" name="pencilSize" id="pencil-size" min="1" max="40" value="1">
+                    <div class="pencil-colors">
+                        <div class="black"></div>
+                        <div class="red"></div>
+                        <div class="blue"></div>
+                        <div class="yellow"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tool" id="eraser">
+                <img src="./NewIcons/Eraser.svg" alt="">
+                <div class="tool-options hide" id="eraser-options">
+                    <input type="range" name="eraserSize" id="eraser-size" min="1" max="40" value="1">
+                </div>
+            </div>
+            <div class="tool" id="sticky">
+                <img src="./NewIcons/StickyNote.svg" alt="">
+            </div>
+            <div class="tool" id="photo">
+                <img src="./NewIcons//Photo.svg" alt="">
+            </div>
+            <div class="tool" id="undo">
+                <img src="./NewIcons/Undo.svg" alt="">
+            </div>
+            <div class="tool" id="redo">
+                <img src="./NewIcons/Redo.svg" alt="">
+            </div>
+            <div class="tool" id="download">
+                <img src="./NewIcons/Download.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="canvas-container">
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./tools.js"></script>
+</body>
+</html>
